@@ -17,6 +17,15 @@ public class DumbMath {
 		return sum;
 	}
 	
+	public static int subtract(int a, int b) {
+		int difference = a - b;
+		
+		// check for overflow
+		if (a > b && difference < 0)
+			throw new ArithmeticException("Overflow when subtracting " + a + " and " + b);
+
+		return difference;
+	}	
 	
 	public static int multiply(int a, int b) {
 		int product = a * b;
