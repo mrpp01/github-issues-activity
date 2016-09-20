@@ -9,14 +9,14 @@ public class DumbStringTest {
 	public void testAllDigitsTrue() {
 		DumbString ds = new DumbString();
 		String s = "12345";
-		assertTrue(ds.allDigits(s));
+		assertTrue("wrong", ds.allDigits(s));
 	}
 
 	@Test
 	public void testAllDigitsFalse() {
 		DumbString ds = new DumbString();
 		String s = "abcd5";
-		assertFalse(ds.allDigits(s));
+		assertFalse("wrong", ds.allDigits(s));
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ public class DumbStringTest {
 		String b = "dcba";
 		int expected = 3;
 		int actual = DumbString.lettersInCommon(a, b);
-		assertEquals(expected, actual);
+		assertEquals("wrong", expected, actual);
 	}
 	
 	@Test
@@ -34,7 +34,7 @@ public class DumbStringTest {
 		String b = "ba";
 		int expected = 1;
 		int actual = DumbString.lettersInCommon(a, b);
-		assertEquals(expected, actual);
+		assertEquals("wrong", expected, actual);
 	}
 	
 }
