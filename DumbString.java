@@ -47,4 +47,12 @@ public class DumbString {
 			}
 	}
 	
+	/**
+	 * Determines if the string passed contains at least one digit
+	 * @param a
+	 * @return true if a contains digits
+	 */
+	public static boolean hasDigit(String a) {
+		return a.matches(".*\\d+.*");
+	}
 }
