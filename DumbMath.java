@@ -7,6 +7,11 @@
 
 public class DumbMath {
 
+	public static double multiplyDoubles (double a, double b)
+	{
+		return a * b;
+	}
+	
 	public static int add(int a, int b) {
 		int sum = a + b;
 		
