@@ -11,7 +11,7 @@ public class DumbMathTest {
 		int b = -3;
 		int expected = 9;
 		int actual = DumbMath.add(a, b);
-		assertEquals(expected, actual);
+		assertEquals("wrong", expected, actual);
 	}
 	
 	@Test
@@ -20,7 +20,7 @@ public class DumbMathTest {
 		int b = -3;
 		int expected = 9;
 		int actual = DumbMath.add(a, b);
-		assertEquals(expected, actual);
+		assertEquals("wrong", expected, actual);
 	}
 	
 	@Test(expected = ArithmeticException.class)
@@ -49,7 +49,7 @@ public class DumbMathTest {
 		int d2 = 3;
 		double expected = 5.0/6;
 		double actual = DumbMath.addFraction(n1, d1, n2, d2);
-		assertEquals(expected, actual, 0.00000000001);
+		assertEquals("wrong", expected, actual, 0.00000000001);
 	}
 	
 
