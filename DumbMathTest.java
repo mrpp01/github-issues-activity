@@ -38,7 +38,7 @@ public class DumbMathTest {
 		int d2 = 4;
 		double expected = 0.75;
 		double actual = DumbMath.addFraction(n1, d1, n2, d2);
-		assertEquals(expected, actual, 0);
+		assertEquals("This is a very meaningful message", expected, actual, 0);
 	}
 	
 	@Test
