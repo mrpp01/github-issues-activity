@@ -33,5 +33,15 @@ public class DumbString {
 		}
 		return common;
 	}
+
+	
+	public static boolean noDigits(String input) {
+		for (char c: input.toCharArray()) {
+			if (0 < c) {
+				return true;
+			} else {
+				return false;
+			}
+	}
 	
 }
